@@ -1,0 +1,19 @@
+<form (ngSubmit)="handleSubmit()">
+  <div class="card">
+    <div class="card-body">
+      <div class="row">
+        <div class="col-sm-4">
+          <input type="text" name="title" id="title" class="form-control form-control-sm rounded-0" [(ngModel)]="todoTitle"
+            placeholder="Title...">
+        </div>
+        <div class="col-sm-6">
+          <input type="text" name="body" id="body" class="form-control form-control-sm rounded-0" [(ngModel)]="todoBody"
+            placeholder="Description...">
+        </div>
+        <div class="col-sm-2">
+          <input type="submit" value="Add" class="btn btn-block btn-sm btn-primary rounded-0">
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
